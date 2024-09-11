@@ -6,7 +6,7 @@ public class O3 {
 
 	public static void main(String[] args) {
 		
-		int fact = 1;
+		int result = 1;
 		int n = 0;
 		
 //		Check if input is valid
@@ -27,10 +27,10 @@ public class O3 {
 				
 		}
 //		Use for loop to calculate factorial
-		for (int i = 1; i <= n; i++) {
-			fact *= i;
+		for (int fact = 1; fact <= n; fact++) {
+			result *= fact;
 		}
 		
-		JOptionPane.showMessageDialog(null, "The value of " + n + "! = " + fact, "Factorial result of n", JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null, "The value of " + n + "! = " + result, "Factorial result of n", JOptionPane.INFORMATION_MESSAGE);
 	}
 }
