@@ -12,8 +12,8 @@ public class O1 {
 		int grossIncome = Integer.parseInt(input);
 		
 //		Initialize sumTax to 0.0 as a starting point before calculating total tax
-		
 		double sumTax = 0.0;
+		
 //		"""Calculate tax for each bracket"""
 		if (grossIncome > 208050) {
 			//Bracket A: income between 208,051 - 292,850 with a 1,7% tax

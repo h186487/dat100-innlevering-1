@@ -28,31 +28,23 @@ public class O2 {
 				}
 			}
 			
-			
 //			Determine grade scores which determines grades	
-			String Grade;
+			String grade = "";
 				
-			if (score >= 90 && score <=100) {
-				Grade = "A";
-					
-			} else if (score >=80 && score <= 89) {
-				Grade = "B";
+			if (score >= 90 && score <=100) grade = "A";
+						
+			if (score >=80 && score <= 89) grade = "B";
 				
-			} else if (score >=60 && score <= 79) {
-				Grade = "C";
-					
-			} else if (score >=50 && score <=59) {
-				Grade = "D";
-					
-			} else if (score >=40 && score <=49) {
-				Grade = "E";
-					
-			} else {
-				Grade = "F";
-					
-			}
+			if (score >=60 && score <= 79) grade = "C";
+				
+			if (score >=50 && score <=59) grade = "D";
+				
+			if (score >=40 && score <=49) grade = "E";
+				
+			if (grade.isEmpty()) grade = "F";
+				
 //			Print student number with their entered score and corresponding grade	
-			JOptionPane.showMessageDialog(null, "Student " + studentNumber + ": Score = " + score + ", Grade = " + Grade, "Grade", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Student " + studentNumber + ": Score = " + score + ", Grade = " + grade, "Grade", JOptionPane.INFORMATION_MESSAGE);
 				
 		}		
 	}
